@@ -1,0 +1,309 @@
+﻿html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #080808;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.mainpage{
+    display:flex;
+    justify-content: space-around;
+}
+.container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.navbar {
+    margin-top: 0px;
+    width:80%;
+    margin: auto;
+    background-color: #1B1B1B;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "IBM Plex Mono", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.125rem;
+    color: #9C9C9C;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar>li {
+    padding-right:40px;
+}
+
+a {
+    text-decoration: none;
+    color: #9C9C9C;
+}
+
+ul{
+    list-style: none;
+}
+
+.mainpage > img {
+    width: 25%;
+    margin-bottom: 0px;
+    border: 5px solid #9C9C9C;
+    border-radius: 50%;
+}
+
+    h1 {
+        font-size: 2rem;
+        font-family: "Raleway", serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #FFFFFF;
+        width: auto;
+        margin-bottom: 0px;
+    }
+
+h2 {
+    font-size: 1.6rem;
+    font-family: "IBM Plex Mono", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #9C9C9C;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.text h3 {
+    font-size: 1.2rem;
+    font-family: "IBM Plex Mono", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #9C9C9C;
+    width: 50vw;
+    margin-top: 0px;
+}
+
+li>img{
+    width: 30%;
+}
+
+
+.familiarity {
+    display: flex;
+    justify-content: center;
+    width:80%;
+    margin: auto;
+}
+
+.fam{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.projects {
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+    .projects div {
+        background: #1B1B1B;
+        width: 20%;
+        text-align: center;
+        border-radius: 8px;
+        padding: 10px 15px;
+        transition: transform 0.2s ease-in-out;
+    }
+
+        .projects div:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+    .projects p {
+        font-size: 1.125rem;
+        font-family: "IBM Plex Mono", serif;
+        font-weight: 600;
+        color: #9C9C9C;
+    }
+
+    .projects h3 {
+        font-size: 1.2rem;
+        font-family: "IBM Plex Mono", serif;
+        font-weight: 800;
+        color: #9C9C9C;
+    }
+
+.projects img{
+    width:70%;
+}
+
+.projects a{
+    display: inline;
+}
+
+.contact{
+    margin-top:0px;
+    text-align: center;
+}
+
+    .contact h3 {
+        display: inline;
+        margin-left: 5px;
+        font-family: "IBM Plex Mono", serif;
+        font-weight: 500;
+    }
+
+.contact li img{
+     vertical-align:bottom;
+    width: 3%;
+    margin-right: 0px;
+}
+
+    .contact li{
+        margin-bottom: 18px;
+    }
+
+    #contact {
+        margin-bottom: 20px;
+    }
+
+
+/* For screens smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+    body {
+        margin: 0px;
+    }
+
+    .navbar {
+        font-size: 0.7rem;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .projects div {
+            width: 90%;
+            margin-bottom: 20px;
+        }
+
+        .projects img {
+            width: 90%;
+        }
+
+        .projects h3 {
+            font-size: 1rem;
+        }
+
+        .projects p {
+            font-size: 1rem;
+        }
+
+    .contact li img {
+        width: 6%;
+    }
+
+    .contact h3 {
+        font-size: 1rem;
+    }
+}
+
+    @media screen and (max-width: 767px) {
+        .navbar {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.2rem; /* Smaller for better readability on phones */
+        margin-bottom: 40px; /* Adjust spacing further */
+    }
+
+    .text h3 {
+        font-size: 0.9rem;
+        width: 80vw;
+        text-align: justify;
+    }
+
+    .mainpage > img {
+        width: 60%; /* Adjust for better sizing */
+        max-width: 100%; /* Prevent overflow */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    li > img {
+        width: 50%;
+    }
+
+    .mainpage {
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container {
+        margin-top: 30px;
+    }
+
+        .contact li img {
+            width: 7%;
+        }
+    }
+
+/* Responsive Styles for Tablets (768px - 1024px) */
+@media screen and (min-width: 767px) and (max-width: 1025px) {
+    h1 {
+        font-size: 2rem; 
+    }
+
+    h2 {
+        font-size: 1.6rem; /* Slightly smaller for tablets */
+        margin-bottom: 50px; /* Adjust spacing */
+    }
+
+    .text h3 {
+        font-size: 1.2rem;
+        width: 60vw;
+    }
+
+    .mainpage > img {
+        width:32%;
+        height: auto;
+    }
+
+   .mainpage{
+       align-items: center;
+   }
+
+    li > img {
+        width: 35%;
+    }
+
+    .contact li img {
+        width: 6%;
+    }
+
+    .contact h3{
+        font-size: 1.5rem;
+    }
+
+}
